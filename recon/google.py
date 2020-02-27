@@ -16,7 +16,7 @@ class Google(Request):
 
 	def search(self):
 		test('Searching "%s" in Google...'%(self.target))
-		url = "https://www.google.it/search?num=1000&hl=en&q=%40{target}".format(
+		url = "https://www.google.fr/search?num=1000&hl=en&q=%40{target}".format(
 			target=self.target)
 		try:
 			resp = self.send(
